@@ -10,6 +10,10 @@ navigate to {rabbitmq.home}\sbin and run
 navigate to {rabbitmq.home}\sbin and run
 `rabbitmq-server start`
 
+## access rabbitmq server
+
+`http://localhost:15672/`
+
 ## Requirements
 
 For building and running the application you need:
@@ -19,12 +23,11 @@ For building and running the application you need:
 
 ## Running the application locally
 
-1. Enable zookeeper
-2. Start rabbitmq server
-3. Build the project using `mvn clean install`
-4. Run using `mvn spring-boot:run`
-5. This will star sending `User` json message 10-times on startup
-6. `User` json message can also send using the api(i.e. `http://localhost:8080/api/v1/user`)
+1. Start rabbitmq server
+2. Build the project using `mvn clean install`
+3. Run using `mvn spring-boot:run`
+4. This will star sending `User` json message 10-times on startup
+5. `User` json message can also send using the api(i.e. `http://localhost:8080/api/v1/user`)
     Request Body :- `{
    "userId": "1",
    "userName": "Hello World"
